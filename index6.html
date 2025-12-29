@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Exam</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen flex flex-col">
+
+<!-- TOP HEADER -->
+<header class="bg-indigo-700 text-white px-8 py-4 flex justify-between items-center">
+  <div class="flex items-center gap-3">
+    <span class="text-2xl font-bold">✔ Smart Exam</span>
+  </div>
+
+  <div class="flex gap-3">
+    <button class="bg-white text-gray-700 px-4 py-1 rounded shadow text-sm">
+      Log In
+    </button>
+    <button class="bg-white text-gray-700 px-4 py-1 rounded shadow text-sm">
+      Sign Up
+    </button>
+  </div>
+</header>
+
+<!-- PAGE TITLE -->
+<section class="bg-indigo-700 text-white text-center py-6">
+  <h1 class="text-xl font-semibold">Logical Reasoning</h1>
+  <p class="text-sm opacity-90">
+    The logical reasoning section is an important part of competitive exams
+  </p>
+</section>
+
+<!-- EXAM INFO BAR -->
+<div class="bg-blue-600 text-white px-6 py-3 flex justify-between">
+  <span>Name : Guest</span>
+  <span class="font-semibold">Online Exam</span>
+  <span>Time Remaining : 00:59:14</span>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="flex flex-1 max-w-7xl mx-auto w-full bg-white shadow">
+
+  <!-- LEFT SIDEBAR -->
+  <aside class="w-1/4 border-r p-4 space-y-6">
+
+    <!-- Section -->
+    <div class="text-center font-semibold text-gray-600 border-b pb-2">
+      Section - 1
+    </div>
+
+    <!-- Question Numbers -->
+    <div class="grid grid-cols-5 gap-2 justify-items-center">
+      <button class="w-8 h-8 bg-green-500 text-white text-sm">1</button>
+      <button class="w-8 h-8 bg-green-500 text-white text-sm">2</button>
+      <button class="w-8 h-8 bg-green-500 text-white text-sm">3</button>
+      <button class="w-8 h-8 bg-green-500 text-white text-sm">4</button>
+      <button class="w-8 h-8 bg-green-500 text-white text-sm">5</button>
+
+      <button class="w-8 h-8 bg-blue-600 text-white text-sm">6</button>
+      <button class="w-8 h-8 bg-green-500 text-white text-sm">7</button>
+      <button class="w-8 h-8 bg-blue-600 text-white text-sm">8</button>
+      <button class="w-8 h-8 bg-gray-300 text-sm">9</button>
+      <button class="w-8 h-8 bg-gray-300 text-sm">10</button>
+    </div>
+
+    <!-- Legends -->
+    <div class="border-t pt-4 space-y-2 text-sm">
+      <p class="font-semibold text-gray-600">Legends</p>
+      <div class="flex items-center gap-2">
+        <span class="w-4 h-4 bg-gray-300 inline-block"></span> Unanswered
+      </div>
+      <div class="flex items-center gap-2">
+        <span class="w-4 h-4 bg-green-500 inline-block"></span> Answered
+      </div>
+      <div class="flex items-center gap-2">
+        <span class="w-4 h-4 bg-blue-600 inline-block"></span> Marked for Review
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="border-t pt-4 text-sm space-y-1">
+      <p>All Questions : <strong>10</strong></p>
+      <p>Questions Answered : <strong>7</strong></p>
+      <p>Questions Unanswered : <strong>2</strong></p>
+      <p>Marked for Review : <strong>2</strong></p>
+    </div>
+
+  </aside>
+
+  <!-- RIGHT PANEL -->
+  <main class="flex-1 flex flex-col">
+
+    <!-- QUESTION HEADER -->
+    <div class="border-b px-6 py-3 flex justify-between items-center">
+      <label class="flex items-center gap-2 text-sm">
+        <input type="checkbox" class="accent-blue-600">
+        Mark for Review
+      </label>
+      <span class="text-sm text-gray-600">Question 8 of 10</span>
+    </div>
+
+    <!-- QUESTION BODY -->
+    <div class="flex-1 px-6 py-6">
+      <p class="mb-6 font-medium">
+        8. Arrange the following words in a meaningful sequence.
+      </p>
+
+      <div class="space-y-4 text-gray-700">
+        <label class="flex items-center gap-2">
+          <input type="radio" name="q">
+          Infection
+        </label>
+        <label class="flex items-center gap-2">
+          <input type="radio" name="q">
+          Consultation
+        </label>
+        <label class="flex items-center gap-2">
+          <input type="radio" name="q">
+          Doctor
+        </label>
+        <label class="flex items-center gap-2">
+          <input type="radio" name="q">
+          Treatment
+        </label>
+      </div>
+    </div>
+
+  </main>
+
+</div>
+
+<!-- BOTTOM BAR -->
+<footer class="bg-blue-600 px-6 py-3 flex justify-between items-center text-white">
+  <div class="flex gap-2">
+    <button class="bg-white text-gray-700 px-6 py-1 rounded">Previous</button>
+    <button class="bg-white text-gray-700 px-6 py-1 rounded">Next</button>
+  </div>
+
+  <button class="bg-white text-gray-700 px-6 py-1 rounded">
+    Submit Exam
+  </button>
+</footer>
+
+<!-- FOOTER -->
+<div class="text-center text-sm text-gray-500 py-3 bg-white">
+  Designed and Developed by Smarteyeapps.com
+</div>
+
+</body>
+</html>

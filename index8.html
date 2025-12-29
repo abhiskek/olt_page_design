@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grayline Exam Desk</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="h-screen w-screen bg-[#F3F4F6] overflow-hidden">
+
+<!-- HEADER -->
+<header class="h-16 bg-[#1F2937] text-white flex items-center justify-between px-6">
+  <div class="flex items-center gap-4">
+    <span class="text-lg font-semibold">📝 All India Aptitude Test</span>
+    <span class="text-sm text-gray-300">Shift 1</span>
+  </div>
+
+  <div class="flex items-center gap-3">
+    <button class="px-4 py-1 rounded bg-gray-700">Quant</button>
+    <button class="px-4 py-1 rounded bg-gray-600">Verbal</button>
+  </div>
+
+  <div class="flex items-center gap-4 text-sm">
+    <span class="text-green-400">● System OK</span>
+    <button class="border px-3 py-1 rounded hover:bg-gray-700">Logout</button>
+  </div>
+</header>
+
+<!-- BODY -->
+<div class="flex h-[calc(100vh-4rem)]">
+
+  <!-- LEFT RAIL -->
+  <aside class="w-[12%] bg-white border-r flex flex-col items-center py-6 gap-6">
+
+    <!-- Profile -->
+    <div class="text-center">
+      <img src="https://i.pravatar.cc/100" class="rounded-full w-16 h-16 mx-auto" />
+      <p class="font-semibold text-gray-700 mt-2">Abhishek Kumar</p>
+      <p class="text-xs text-gray-500">Roll No: 22081</p>
+    </div>
+
+    <!-- Timer -->
+    <div class="relative w-24 h-24">
+      <div class="absolute inset-0 rounded-full border-4 border-gray-700"></div>
+      <div class="absolute inset-3 bg-white rounded-full flex flex-col items-center justify-center">
+        <span class="text-xs text-gray-500">Remaining</span>
+        <span class="font-mono text-gray-800 font-semibold">42:18</span>
+      </div>
+    </div>
+
+    <!-- Section Switch -->
+    <div class="w-full px-4 space-y-2">
+      <button class="w-full bg-gray-800 text-white py-2 rounded">Quant</button>
+      <button class="w-full bg-gray-200 text-gray-700 py-2 rounded">Verbal</button>
+    </div>
+
+    <!-- Progress -->
+    <div class="w-2 h-40 bg-gray-200 rounded relative">
+      <div class="absolute bottom-0 h-24 w-full bg-gray-700 rounded"></div>
+    </div>
+
+  </aside>
+
+  <!-- MAIN -->
+  <main class="w-[68%] flex flex-col">
+
+    <!-- Question -->
+    <section class="flex-1 flex justify-center items-center px-10">
+      <div class="bg-white rounded-xl shadow p-8 w-full max-w-3xl">
+
+        <div class="flex justify-between mb-4 text-sm text-gray-600">
+          <span>Quantitative Aptitude</span>
+          <span>Question 8 / 20</span>
+        </div>
+
+        <h2 class="text-gray-800 font-semibold mb-6">
+          If the average of first 5 consecutive natural numbers is A,
+          what is the average of next 9 consecutive numbers?
+        </h2>
+
+        <!-- Options -->
+        <div class="space-y-3">
+          <label class="flex gap-3 p-3 border rounded cursor-pointer hover:bg-gray-50">
+            <input type="radio" name="q" class="accent-gray-700">
+            <span>10</span>
+          </label>
+          <label class="flex gap-3 p-3 border rounded cursor-pointer hover:bg-gray-50">
+            <input type="radio" name="q" class="accent-gray-700">
+            <span>15</span>
+          </label>
+          <label class="flex gap-3 p-3 border border-green-500 bg-green-50 rounded cursor-pointer">
+            <input type="radio" checked name="q" class="accent-green-600">
+            <span>20</span>
+          </label>
+          <label class="flex gap-3 p-3 border rounded cursor-pointer hover:bg-gray-50">
+            <input type="radio" name="q" class="accent-gray-700">
+            <span>25</span>
+          </label>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ACTION BAR -->
+    <footer class="h-20 bg-white border-t px-10 flex justify-between items-center">
+      <div class="flex gap-3">
+        <button class="border px-4 py-2 rounded text-gray-600">Mark for Review</button>
+        <button class="bg-gray-200 px-4 py-2 rounded">Previous</button>
+        <button class="bg-gray-800 text-white px-4 py-2 rounded">Save & Next</button>
+      </div>
+
+      <button class="bg-green-600 text-white px-6 py-2 rounded font-semibold">
+        Submit Exam
+      </button>
+    </footer>
+
+  </main>
+
+  <!-- RIGHT -->
+  <aside class="w-[20%] bg-white border-l p-6 overflow-y-auto">
+    <h3 class="font-semibold text-gray-700 mb-4">Question Navigator</h3>
+
+    <div class="grid grid-cols-5 gap-2 mb-6">
+      <button class="bg-green-500 text-white py-2 rounded text-xs">1</button>
+      <button class="bg-green-500 text-white py-2 rounded text-xs">2</button>
+      <button class="bg-gray-500 text-white py-2 rounded text-xs">3</button>
+      <button class="bg-gray-700 text-white py-2 rounded text-xs">4</button>
+      <button class="bg-gray-200 py-2 rounded text-xs">5</button>
+    </div>
+
+    <div class="text-sm text-gray-600 space-y-2">
+      <p><span class="inline-block w-3 h-3 bg-green-500 rounded mr-2"></span>Answered</p>
+      <p><span class="inline-block w-3 h-3 bg-gray-500 rounded mr-2"></span>Review</p>
+      <p><span class="inline-block w-3 h-3 bg-gray-300 rounded mr-2"></span>Not Attempted</p>
+      <p><span class="inline-block w-3 h-3 bg-gray-700 rounded mr-2"></span>Current</p>
+    </div>
+  </aside>
+
+</div>
+
+</body>
+</html>

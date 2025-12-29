@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Online Exam Portal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen">
+
+  <!-- Header -->
+  <header class="bg-white shadow px-6 py-3 flex justify-between items-center">
+    <h1 class="text-lg font-semibold">Online Test - CAT Preparation</h1>
+    <div class="flex items-center gap-4">
+      <span class="text-sm text-gray-600">Time Left</span>
+      <div class="flex gap-2 text-sm font-semibold">
+        <span>00</span>:<span>42</span>:<span>39</span>
+      </div>
+      <div class="w-9 h-9 rounded-full bg-gray-300"></div>
+    </div>
+  </header>
+
+  <!-- Main Layout -->
+  <div class="flex max-w-7xl mx-auto mt-4 gap-4 px-4">
+
+    <!-- LEFT: Question Section (75%) -->
+    <main class="w-3/4 bg-white rounded shadow p-6">
+
+      <h2 class="font-semibold mb-4">Quant - Question 8</h2>
+
+      <p class="text-gray-700 mb-6">
+        The arithmetic mean of the 5 consecutive integers starting with 's' is 'a'.
+        What is the arithmetic mean of 9 consecutive integers that start with s + 2?
+      </p>
+
+      <!-- Options -->
+      <div class="space-y-3">
+        <label class="flex items-center gap-2">
+          <input type="checkbox" class="accent-blue-600">
+          <span>A. 78</span>
+        </label>
+
+        <label class="flex items-center gap-2">
+          <input type="checkbox" checked class="accent-green-600">
+          <span>B. 58</span>
+        </label>
+
+        <label class="flex items-center gap-2">
+          <input type="checkbox" class="accent-blue-600">
+          <span>C. 68</span>
+        </label>
+
+        <label class="flex items-center gap-2">
+          <input type="checkbox" class="accent-blue-600">
+          <span>D. 98</span>
+        </label>
+      </div>
+
+      <!-- Footer Buttons -->
+      <div class="flex justify-between items-center mt-8">
+        <div class="flex gap-2">
+          <button class="bg-red-500 text-white px-4 py-2 rounded text-sm">
+            Mark for Review
+          </button>
+          <button class="bg-gray-300 px-4 py-2 rounded text-sm">
+            Previous
+          </button>
+          <button class="bg-blue-600 text-white px-4 py-2 rounded text-sm">
+            Next
+          </button>
+        </div>
+
+        <button class="bg-green-600 text-white px-6 py-2 rounded">
+          Submit Test
+        </button>
+      </div>
+    </main>
+
+    <!-- RIGHT: Timer + Question Palette (25%) -->
+    <aside class="w-1/4 bg-white rounded shadow p-4 space-y-6">
+
+      <!-- Quant Section -->
+      <div>
+        <h3 class="font-semibold mb-3">Quant</h3>
+        <div class="grid grid-cols-6 gap-2">
+          <button class="bg-green-500 text-white text-xs py-2 rounded">1</button>
+          <button class="bg-green-500 text-white text-xs py-2 rounded">2</button>
+          <button class="bg-green-500 text-white text-xs py-2 rounded">3</button>
+          <button class="bg-green-500 text-white text-xs py-2 rounded">4</button>
+          <button class="bg-green-500 text-white text-xs py-2 rounded">5</button>
+          <button class="bg-green-500 text-white text-xs py-2 rounded">6</button>
+          <button class="bg-red-500 text-white text-xs py-2 rounded">7</button>
+          <button class="bg-blue-600 text-white text-xs py-2 rounded">8</button>
+          <button class="bg-gray-300 text-xs py-2 rounded">9</button>
+        </div>
+      </div>
+
+      <!-- Verbal Section -->
+      <div>
+        <h3 class="font-semibold mb-3">Verbal</h3>
+        <div class="grid grid-cols-6 gap-2">
+          <button class="bg-red-500 text-white text-xs py-2 rounded">1</button>
+          <button class="bg-yellow-500 text-white text-xs py-2 rounded">2</button>
+          <button class="bg-yellow-500 text-white text-xs py-2 rounded">3</button>
+          <button class="bg-green-500 text-white text-xs py-2 rounded">4</button>
+          <button class="bg-green-500 text-white text-xs py-2 rounded">5</button>
+          <button class="bg-green-500 text-white text-xs py-2 rounded">6</button>
+        </div>
+      </div>
+
+      <!-- Legend -->
+      <div class="text-xs text-gray-600 space-y-1">
+        <p>🔵 Current</p>
+        <p>⚪ Not Attempted</p>
+        <p>🟢 Answered</p>
+        <p>🟠 Not Answered</p>
+        <p>🔴 Review</p>
+      </div>
+
+    </aside>
+  </div>
+
+</body>
+</html>

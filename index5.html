@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pro Exam Desk</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="h-screen w-screen bg-slate-100 overflow-hidden">
+
+<!-- HEADER -->
+<header class="h-20 bg-gradient-to-r from-indigo-600 to-blue-600 text-white flex justify-between items-center px-8 shadow">
+
+  <!-- Brand -->
+  <div>
+    <h1 class="text-xl font-bold">PRO EXAM DESK</h1>
+    <p class="text-xs opacity-80">Secure Online Assessment Platform</p>
+  </div>
+
+  <!-- Timer -->
+  <div class="text-center">
+    <p class="text-xs opacity-80">Time Remaining</p>
+    <p class="text-lg font-mono font-semibold">00 : 42 : 39</p>
+  </div>
+
+  <!-- User Profile -->
+  <div class="flex items-center gap-3 bg-white/20 px-4 py-2 rounded-lg">
+    <img src="https://i.pravatar.cc/40" class="rounded-full w-10 h-10" />
+    <div class="text-sm">
+      <p class="font-semibold">Abhishek Kumar</p>
+      <p class="text-xs opacity-80">Candidate ID: 24571</p>
+    </div>
+  </div>
+
+</header>
+
+<!-- MAIN -->
+<div class="flex h-[calc(100vh-5rem)]">
+
+  <!-- LEFT PANEL -->
+  <section class="w-[70%] flex flex-col p-6">
+
+    <!-- Question Card -->
+    <div class="bg-white rounded-xl shadow flex-1 p-8">
+
+      <div class="flex justify-between mb-4">
+        <span class="text-indigo-600 font-semibold text-sm">QUANTITATIVE APTITUDE</span>
+        <span class="text-sm text-gray-500">Question 08 / 20</span>
+      </div>
+
+      <h2 class="font-semibold text-lg mb-6 leading-relaxed">
+        The arithmetic mean of 5 consecutive integers is 'a'.
+        What is the arithmetic mean of 9 consecutive integers starting from a + 2?
+      </h2>
+
+      <!-- Options -->
+      <div class="space-y-4">
+        <label class="flex gap-3 p-4 rounded-lg border hover:border-indigo-500 cursor-pointer">
+          <input type="radio" name="q" class="accent-indigo-600">
+          <span>78</span>
+        </label>
+
+        <label class="flex gap-3 p-4 rounded-lg border border-green-500 bg-green-50 cursor-pointer">
+          <input type="radio" checked name="q" class="accent-green-600">
+          <span>58</span>
+        </label>
+
+        <label class="flex gap-3 p-4 rounded-lg border hover:border-indigo-500 cursor-pointer">
+          <input type="radio" name="q" class="accent-indigo-600">
+          <span>68</span>
+        </label>
+
+        <label class="flex gap-3 p-4 rounded-lg border hover:border-indigo-500 cursor-pointer">
+          <input type="radio" name="q" class="accent-indigo-600">
+          <span>98</span>
+        </label>
+      </div>
+
+    </div>
+
+    <!-- Footer Actions -->
+    <div class="mt-4 flex justify-between">
+      <button class="border border-red-500 text-red-500 px-4 py-2 rounded-lg">
+        Mark for Review
+      </button>
+
+      <div class="flex gap-3">
+        <button class="px-5 py-2 rounded-lg bg-gray-200">Previous</button>
+        <button class="px-5 py-2 rounded-lg bg-indigo-600 text-white">Save & Next</button>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- RIGHT PANEL -->
+  <aside class="w-[30%] bg-white border-l p-6 overflow-y-auto">
+
+    <!-- Profile Card -->
+    <div class="bg-indigo-50 p-4 rounded-xl flex items-center gap-4 mb-6">
+      <img src="https://i.pravatar.cc/60" class="rounded-full w-14 h-14">
+      <div>
+        <p class="font-semibold">Abhishek Kumar</p>
+        <p class="text-xs text-gray-500">Roll No: CAT2025-081</p>
+        <p class="text-xs text-gray-500">Section: Quant</p>
+      </div>
+    </div>
+
+    <!-- Question Navigator -->
+    <h3 class="font-semibold mb-3">Question Navigator</h3>
+
+    <div class="grid grid-cols-6 gap-2 mb-6">
+      <button class="bg-green-500 text-white text-xs py-2 rounded">1</button>
+      <button class="bg-green-500 text-white text-xs py-2 rounded">2</button>
+      <button class="bg-green-500 text-white text-xs py-2 rounded">3</button>
+      <button class="bg-green-500 text-white text-xs py-2 rounded">4</button>
+      <button class="bg-green-500 text-white text-xs py-2 rounded">5</button>
+      <button class="bg-red-500 text-white text-xs py-2 rounded">6</button>
+      <button class="bg-red-500 text-white text-xs py-2 rounded">7</button>
+      <button class="bg-indigo-600 text-white text-xs py-2 rounded">8</button>
+      <button class="bg-gray-200 text-xs py-2 rounded">9</button>
+      <button class="bg-gray-200 text-xs py-2 rounded">10</button>
+    </div>
+
+    <!-- Legend -->
+    <div class="text-xs text-gray-600 space-y-2">
+      <p><span class="inline-block w-3 h-3 bg-green-500 rounded mr-2"></span>Answered</p>
+      <p><span class="inline-block w-3 h-3 bg-red-500 rounded mr-2"></span>Marked for Review</p>
+      <p><span class="inline-block w-3 h-3 bg-gray-300 rounded mr-2"></span>Not Attempted</p>
+      <p><span class="inline-block w-3 h-3 bg-indigo-600 rounded mr-2"></span>Current</p>
+    </div>
+
+    <!-- Submit -->
+    <button class="w-full mt-6 bg-green-600 text-white py-3 rounded-xl font-semibold">
+      Submit Exam
+    </button>
+
+  </aside>
+
+</div>
+
+</body>
+</html>
